@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Character Reveal</title> 
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="input__container">
+  <input onchange="changeName()" type="text" id="charNameSrc" placeholder="Character Name..." />
+<label for="img" class="file__upload">
+  Upload An Image
+</label>
+  <input type="file" onchange="changeImage(event)" id="img" name="img" accept="image/*">
+<button id="submit" onclick="playAudio()">Play Animation</button>
+
+  </div>
+  <div class="container">
+    <img id="character" src="mario.png" alt="">
+    <div data-text="Fighter Name" id="charName"></div>
+    <div id="wrapper"><div id="battle"></div></div>
+  </div>
+  <script>
+  let fighterName = document.getElementById('charName')
+  let battle = document.getElementById('battle')
+  let charImg = document.getElementById('charImg')
+  let image = document.getElementById('character')
+  let wrapper = document.getElementById('wrapper')
+  let imageSrc = document.getElementById('changeImageSrc')
+  let charName = document.getElementById('charNameSrc')
+  let audio
+  function changeName() {
+    fighterName.innerHTML = charName.value
+  }
+  function changeImage(event) {
+    var reader = new FileReader();
+    reader.onload = function () {
+      image.setAttribute('src', reader.result)
+      imageSrc.src = reader.result;
+    }
+    reader.readAsDataURL(event.target.files[0])
+    //image.setAttribute('src', imageSrc.value);
+  }
+  fighterName.innerHTML = 'Mario'
+  battle.innerHTML = 'Joins the Battle!'
+  function playAudio () {
+    fighterName.classList.remove('charText');
+    void fighterName.offsetWidth;
+    fighterName.classList.add('charText');
+    wrapper.classList.remove('charText');
+    void wrapper.offsetWidth;
+    wrapper.classList.add('charText');
+    image.classList.remove('charAnim')
+    void image.offsetWidth;
+    image.classList.add('charAnim')
+    if (audio) {
+      audio.pause();
+      audio.currentTime = 0; 
+    }
+    audio = new Audio('./reveal.mp3');
+    audio.play();
+  }
+  </script>
+</body>
+</html>

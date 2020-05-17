@@ -1,0 +1,544 @@
+@font-face {
+  font-family: 'LoL Body';
+  font-weight: normal;
+  font-style: normal;
+  src: url('./spiegel/spiegel-regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'LoL Body';
+  font-weight: 700;
+  font-style: normal;
+  src: url('./spiegel/spiegel-semibold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'LoL Body';
+  font-weight: 900;
+  font-style: normal;
+  src: url('./spiegel/spiegel-bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'LoL Body';
+  font-weight: normal;
+  font-style: italic;
+  src: url('./spiegel/spiegel-regularitalic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'LoL Body';
+  font-weight: 700;
+  font-style: italic;
+  src: url('./spiegel/spiegel-semibolditalic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'LoL Body';
+  font-weight: 900;
+  font-style: italic;
+  src: url('./spiegel/spiegel-bolditalic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'LoL Display';
+  font-weight: 300;
+  font-style: normal;
+  src: url('./beaufort/beaufortforlol-light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'LoL Display';
+  font-weight: normal;
+  font-style: normal;
+  src: url('./beaufort/beaufortforlol-regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'LoL Display';
+  font-weight: 500;
+  font-style: normal;
+  src: url('./beaufort/beaufortforlol-medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'LoL Display';
+  font-weight: 700;
+  font-style: normal;
+  src: url('./beaufort/beaufortforlol-bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'LoL Display';
+  font-weight: 900;
+  font-style: normal;
+  src: url('./beaufort/beaufortforlol-heavy.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'LoL Display';
+  font-weight: 300;
+  font-style: italic;
+  src: url('./beaufort/beaufortforlol-lightitalic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'LoL Display';
+  font-weight: normal;
+  font-style: italic;
+  src: url('./beaufort/beaufortforlol-Italic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'LoL Display';
+  font-weight: 500;
+  font-style: italic;
+  src: url('./beaufort/beaufortforlol-mediumItalic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'LoL Display';
+  font-weight: 700;
+  font-style: italic;
+  src: url('./beaufort/beaufortforlol-boldItalic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'LoL Display';
+  font-weight: 900;
+  font-style: italic;
+  src: url('./beaufort/beaufortforlol-heavyItalic.otf') format('opentype');
+}
+
+
+
+
+.modalImage {
+  height: 95vh;
+}
+
+.modal {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 3;
+  overflow-y: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+::-webkit-input-placeholder {
+  color: rgba(130, 99, 50, 0.5);
+  opacity: 1;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+:-ms-input-placeholder {
+  color: rgba(130, 99, 50, 0.5);
+  opacity: 1;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+::-ms-input-placeholder {
+  color: rgba(130, 99, 50, 0.5);
+  opacity: 1;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+::placeholder {
+  color: rgba(130, 99, 50, 0.5);
+  opacity: 1;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+:-ms-input-placeholder {
+  color: rgba(130, 99, 50, 0.5);
+  opacity: 1;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+::-ms-input-placeholder {
+  color: rgba(130, 99, 50, 0.5);
+  opacity: 1;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+* {
+  transition: 300ms;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: #0a0a0a;
+  font-family: "LoL Display", "Arial", sans-serif;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  padding: 2em;
+  font-size: 12px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.25);
+  font-family: sans-serif;
+}
+footer a {
+  color: #826332;
+}
+footer a:hover {
+  color: #dcc6a4;
+}
+
+.champSearchContainer {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.champSearch {
+  padding: .75em;
+  margin: 1em 0;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 18px;
+  border: 1px solid #826332;
+  color: #826332;
+  outline: none;
+  width: 250px;
+}
+@media only screen and (max-width: 1024px) {
+  .champSearch {
+    width: 80vw;
+  }
+}
+
+.navHeader {
+  font-size: 24px;
+  color: #826332;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+}
+.navHeader a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: .5em 0;
+}
+.navHeader img {
+  width: 35px;
+  margin: .5em 0;
+}
+.navHeader a:hover {
+  color: #c0985a;
+}
+
+.champList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.champList > div {
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.champImg {
+  border: 1px solid #927345;
+  width: 250px;
+  height: 425px;
+  background-size: cover;
+  background-position: center;
+  background-color: #0a0a0a;
+}
+
+.champData {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: rgba(10, 10, 10, 0.5);
+  justify-content: flex-end;
+}
+.champData:hover {
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+.champData:hover > .champDisplay {
+  border-top: 1px solid #927345;
+  padding: 10px;
+  background-color: rgba(10, 10, 10, 0.9);
+}
+
+.champName,
+.champTitle {
+  color: #937341;
+  letter-spacing: 2px;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 25px;
+}
+
+.champTitle {
+  color: white;
+  font-size: 10px;
+  padding: 0.5em 0;
+  line-height: 15px;
+}
+
+.champWallpaper {
+  min-height: 75vh;
+  background-size: cover;
+  background-position: 48.9063% 15%;
+}
+
+.champWallpaperName {
+  font-size: calc(64px + 6 * ((100vw - 320px) / 680));
+  background: -webkit-linear-gradient(bottom, #67471f, #cbac62);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-weight: 500;
+}
+
+.champWallpaperLayout {
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  justify-content: flex-end;
+  text-align: center;
+  background: linear-gradient(180deg, #0a0a0a 5%, rgba(255, 255, 255, 0) 45%, #0a0a0a 95%);
+}
+
+.champWallpaperTitle {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #c4b998;
+  letter-spacing: 4px;
+  padding: 16px 0 16px 4px;
+}
+
+.champWallpaperContainer {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.champWallpaperLore {
+  line-height: 20px;
+  font-size: 12px;
+  width: 50vw;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.65);
+  letter-spacing: 3px;
+  text-align: justify;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+@media only screen and (max-width: 1024px) {
+  .champWallpaperLore {
+    width: 80vw;
+  }
+}
+
+.champWallpaperRole {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #826332;
+  text-align: center;
+  border: 1px solid #31271e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  width: 10em;
+  padding: 1em;
+  margin: 0 auto;
+  background-color: #111318;
+  line-height: 20px;
+  font-family: sans-serif;
+}
+.champWallpaperRole p {
+  color: #c4b998;
+}
+
+.champWallpaperSkins {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 1em;
+  justify-content: center;
+}
+
+.champWallpaperImg {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+  width: 100%;
+}
+.champWallpaperImg div {
+  margin-left: 10px;
+}
+
+.champRoleImages {
+  width: 35px;
+}
+
+.champWallpaperTitle {
+  font-size: 16px;
+  color: #c4b998;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.champWallpaperSkinGallery {
+  border: 1px solid #826332;
+  height: 450px;
+  width: 250px;
+  margin: 1em 1em 0 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.champWallpaperData {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: rgba(10, 10, 10, 0.5);
+  justify-content: flex-end;
+}
+.champWallpaperData:hover {
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+.champWallpaperData:hover > .champWallpaperDisplay {
+  border-top: 1px solid #927345;
+  padding: 10px;
+  background-color: rgba(10, 10, 10, 0.9);
+}
+
+.championSkills {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  border: 1px solid #31271e;
+  background-color: #111318;
+  padding: 2em;
+  margin: 1em auto;
+  width: 350px;
+  grid-gap: 5px;
+}
+
+.championSkills div > img {
+  border: 1px solid #31271e;
+  cursor: pointer;
+  max-width: 64px;
+  max-height:  64px;
+}
+
+.championToolTip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+  margin: -5.5em -1em;
+  padding: 1em;
+  border: 1px solid #31271e;
+  background-color: #111318;
+}
+.championToolTip p:first-child {
+  color: #826332;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 2em;
+  font-family: 'LoL Display', sans-serif;
+}
+.championToolTip p {
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+}
+
+.championSkillData {
+  border: 1px solid #31271e;
+  background-color: #111318;
+  padding: 2em;
+  margin: 1em auto;
+  width: 350px;
+  display: grid;
+}
+
+.championSkillData div {
+  grid-template-columns: 6em max-content;
+}
+.championSkillData p {
+  text-transform: uppercase;
+  width: 5vw;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+@media only screen and (max-width: 1024px) {
+  .championSkillData p {
+    line-height: 5vh;
+  }
+}
+
+.champSkillBlockContainer {
+  display: grid;
+  align-items: center;
+}
+
+.champSkillBlockContainer p {
+  font-family: sans-serif;
+}
+
+
+.champSkillBlock {
+  width: 25px;
+  height: 25px;
+  background-color: #826332;
+  margin: 1px;
+}
+
+.champSkillSplit {
+  display: flex;
+}

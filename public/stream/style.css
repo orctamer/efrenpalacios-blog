@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css?family=Anton&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Anton', sans-serif;
+}
+
+body {
+  background-color: #00FF00;
+  overflow: hidden;
+}
+
+.stream {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.stream__container {
+  width: 150vw;
+  -webkit-animation-name: open;
+          animation-name: open;
+  -webkit-animation-duration: 7000ms;
+          animation-duration: 7000ms;
+  background-color: #E01727;
+  -webkit-transform: rotate(-8deg);
+          transform: rotate(-8deg);
+  position: relative;
+}
+
+.stream__main {
+  height: 100%;
+  font-size: 48pt;
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  left: 0;
+  top: 20%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-animation-name: left;
+          animation-name: left;
+  -webkit-animation-duration: 6000ms;
+          animation-duration: 6000ms;
+}
+
+.stream__sub {
+  height: 100%;
+  font-size: 24pt;
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  right: -100px;
+  top: 60%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  -webkit-animation-name: right;
+          animation-name: right;
+  -webkit-animation-duration: 6000ms;
+          animation-duration: 6000ms;
+}
+
+@-webkit-keyframes right {
+  from {
+    right: 0;
+  }
+  20% {
+    right: 50%;
+  }
+  90% {
+    right: 50%;
+  }
+  to {
+    right: 120%;
+  }
+}
+
+@keyframes right {
+  from {
+    right: 0;
+  }
+  20% {
+    right: 50%;
+  }
+  90% {
+    right: 50%;
+  }
+  to {
+    right: 120%;
+  }
+}
+
+@-webkit-keyframes left {
+  from {
+    left: 0;
+  }
+  20% {
+    left: 50%;
+  }
+  90% {
+    left: 50%;
+  }
+  to {
+    left: 120%;
+  }
+}
+
+@keyframes left {
+  from {
+    left: 0;
+  }
+  20% {
+    left: 50%;
+  }
+  90% {
+    left: 50%;
+  }
+  to {
+    left: 120%;
+  }
+}
+
+@-webkit-keyframes open {
+  from {
+    height: 0px;
+  }
+  5% {
+    height: 250px;
+  }
+  95% {
+    height: 250px;
+  }
+  to {
+    height: 0px;
+  }
+}
+
+@keyframes open {
+  from {
+    height: 0px;
+  }
+  5% {
+    height: 250px;
+  }
+  95% {
+    height: 250px;
+  }
+  to {
+    height: 0px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
