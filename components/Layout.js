@@ -22,15 +22,27 @@ export default class extends React.Component {
 					<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 					<link rel="icon" sizes="192x192" href="../logo.png" />
 					<title>{this.props.title || "Efren Palacios"}</title>
-					<meta name="description" content={this.props.des || ""} />
-					<meta property="og:title" content={this.props.title || "Efren Palacios"} />
+					<meta
+						name="description"
+						content={this.props.des || "Personal blog and portfolio showcase."}
+					/>
+					<meta
+						property="og:description"
+						content={this.props.des || "Personal blog and portfolio showcase."}
+					/>
+					<meta
+						property="og:title"
+						content={this.props.title || "Efren Palacios"}
+					/>
 					<meta
 						property="og:url"
 						content={this.props.url || "https://efrenpalacios.dev"}
 					/>
 					<meta
 						property="og:image"
-						content={this.props.image || "../logo.png"}
+						content={
+							this.props.image || "https://efrenpalacios.dev/img/logo.png"
+						}
 					/>
 					<link
 						rel="stylesheet"
