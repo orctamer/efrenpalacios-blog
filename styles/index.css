@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: linear-gradient(hsl(210, 10%, 12%), #101010);
+  @apply text-gray-100;
+}
+
+h1, h2, h4, h5, h6 {
+  @apply text-white;
+}
+
+h1 {
+  @apply text-4xl font-semibold tracking-tight;
+}
+
+h2 {
+  @apply text-3xl font-semibold tracking-tight;
+}
+
+h3 {
+  @apply text-2xl font-semibold tracking-tight;
+}
+
+h4 {
+  @apply text-xl font-semibold tracking-tight;
+}
+
+p {
+  @apply py-4;
+}
