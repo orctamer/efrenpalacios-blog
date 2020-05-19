@@ -73,21 +73,23 @@ export default class extends React.Component {
 							/>
 						</button>
 					</a>
-					<Link href="/about">
-						<button
-							className="mt-8 sm:ml-8 bg-yellow-500 hover:bg-yellow-300
+					{!this.props.isAbout && (
+						<Link href="/about">
+							<button
+								className="mt-8 sm:ml-8 bg-yellow-500 hover:bg-yellow-300
 							text-gray-900 font-bold py-2 px-4 rounded outline-none flex justify-center items-center"
-							style={{ minWidth: "200px" }}
-						>
-							About Me{" "}
-							<img
-								width="25px"
-								src="/img/icons/about.svg"
-								alt=""
-								className="ml-4"
-							/>
-						</button>
-					</Link>
+								style={{ minWidth: "200px" }}
+							>
+								About Me{" "}
+								<img
+									width="25px"
+									src="/img/icons/about.svg"
+									alt=""
+									className="ml-4"
+								/>
+							</button>
+						</Link>
+					)}
 				</div>
 			</>
 		);

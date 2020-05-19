@@ -88,7 +88,7 @@ export default class extends React.Component {
 						/>
 					</button>
 				</div>
-				<Hero isHome={this.props.isHome} />
+				<Hero isHome={this.props.isHome} isAbout={this.props.isAbout} />
 				<div className="container mx-auto px-4"> {this.props.children} </div>
 				<Footer />
 			</>

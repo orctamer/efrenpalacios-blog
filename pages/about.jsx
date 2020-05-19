@@ -7,7 +7,7 @@ export default class extends React.Component {
   render() {
     return (
       <>
-        <Layout>
+        <Layout isAbout={true}>
           <section className="relative">
             <div className="flex flex-col justify-center items-center">
               <div id="profile" className="sm:w-3/5 mt-8 h-full">
