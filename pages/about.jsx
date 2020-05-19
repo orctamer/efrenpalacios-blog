@@ -26,7 +26,7 @@ export default class extends React.Component {
               {languages.map(lang => (
               <div class="flex flex-col justify-center items-center">
                 <div class="mx-10">
-                  <img src={`/img/icons/${lang}.svg`} alt="" class="sm:w-10 w-8" />
+                  <img src={`/img/icons/${lang.toLowerCase()}.svg`} alt="" class="sm:w-10 w-8" />
                 </div> 
                 <div>
                   <p class="py-5">{lang}</p>
@@ -41,7 +41,7 @@ export default class extends React.Component {
               {tools.map(tool => (
               <div class="flex flex-col justify-center items-center">
                 <div class="mx-10">
-                  <img src={`/img/icons/${tool}.svg`} alt="" class="sm:w-10 w-8" />
+                  <img src={`/img/icons/${tool.toLowerCase()}.svg`} alt="" class="sm:w-10 w-8" />
                 </div> 
                 <div>
                   <p class="py-5">{tool}</p>
