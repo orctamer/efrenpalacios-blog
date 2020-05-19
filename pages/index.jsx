@@ -12,9 +12,8 @@ export default class extends React.Component {
   }
   render() {
     const {next_page, previous_page} = this.props.meta;
-
     return (
-			<Layout title="Efren Palacios" des="Efren Palacios Personal Website & Portfolio" >
+			<Layout title="Efren Palacios" des="Efren Palacios Personal Website & Portfolio" isHome={true} >
 						{this.props.data.map((post) => {
 							return (
 								<div key={post.slug} className="relative rounded-lg block md:flex items-center shadow my-12" style={{ minHeight: "19rem", background: "#101010" }} >
