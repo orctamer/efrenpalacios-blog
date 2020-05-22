@@ -14,6 +14,7 @@ export default class extends React.Component {
     const {next_page, previous_page} = this.props.meta;
     return (
 			<Layout title="Efren Palacios" des="Efren Palacios Personal Website & Portfolio" isHome={true} >
+						<h1 className="text-center mt-12 text-4xl uppercase  text-yellow-500">Projects</h1>
 						{this.props.data.map((post) => {
 							return (
 								<div key={post.slug} className="relative rounded-lg block md:flex items-center shadow my-12" style={{ minHeight: "19rem", background: "#101010" }} >
@@ -25,7 +26,7 @@ export default class extends React.Component {
 									</Link>
 									<div className="w-full md:w-3/5 h-full flex items-center rounded-lg " style={{background: '#101010'}}>
 										<div className="p-12 md:pr-24 md:pl-16 md:py-12">
-											<p className="text-3xl text-gray-100 leading-3 tracking-tight font-semibold">{post.title}</p>
+											<p className="text-3xl text-gray-100 leading-2 tracking-tight font-semibold">{post.title}</p>
 											<p className="text-gray-400">{post.summary}</p>
 											<Link href="/post/[id]" as={`/post/${post.slug}`}>
 											<a className="flex items-baseline mt-3 text-yellow-500 hover:text-yellow-300 focus:text-yellow-300">

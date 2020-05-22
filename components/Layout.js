@@ -6,7 +6,8 @@ import Footer from './Footer';
 
 export default class extends React.Component {
   constructor(props) {
-    super(props);
+		super(props);
+		this._isMounted = false;
     this.state = {
 			hasScrolled: false
 		}
@@ -70,12 +71,12 @@ export default class extends React.Component {
 							? {
 									opacity: "100",
 									visibility: "visible",
-									opacity: 1,
-									transitionDelay: "0s",
+									opacity: 1,									
 							  }
 							: {
 									visibility: "hidden",
-									opacity: 0,
+									opacity: "0",
+									transitionDelay: "0s",
 									transition:
 										"visibility 0s linear 0.33s, opacity 0.33s linear",
 							  }

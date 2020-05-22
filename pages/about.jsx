@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
 
-const languages = ['JavaScript', 'Vue', 'Node', 'Socket-IO', 'PHP', 'Ruby', 'Jekyll', 'Python', 'CSS3', 'HTML5']
+const languages = ['JavaScript', 'Vue', 'Node', 'React', 'PHP', 'Ruby', 'Jekyll', 'Python', 'CSS3', 'HTML5']
 const tools = ['VSCode', 'GitHub', 'BitBucket', 'GitLab', 'Bulma', 'Semantic-UI', 'TailwindCSS', 'PowerShell', 'ConEmu', 'Hyper']
 export default class extends React.Component {
   render() {
