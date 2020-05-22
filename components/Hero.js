@@ -43,7 +43,10 @@ export default class extends React.Component {
 							</button>
 						</Link>
 					)}
-					<a target="_blank" href="./Efren_Palacios_Resume.pdf">
+					<a
+						target="_blank"
+						href="https://efrenpalacios.dev/Efren_Palacios_Resume.pdf"
+					>
 						<button
 							className="mt-8 sm:ml-8 bg-yellow-500 hover:bg-yellow-300
  							text-gray-900 font-bold py-2 px-4 rounded outline-none flex justify-center items-center"
